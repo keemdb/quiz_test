@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="start">
+        <p>Quiz Start!</p>
+        <button id="startBtn">go!</button>
+      </div>
+      <div id="quiz">
+        <div id="question"></div>
+        <div id="choices">
+          <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+          <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+          <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+          <div class="choice" id="D" onclick="checkAnswer('D')"></div>
+        </div>
+        <div id="comment">
+			<div id="nextBtn">다음 문제</div>
+		</div>
+      </div>
+      <div id="scoreContainer"></div>
+    </div>
+    <script src="js/quiz.js"></script>
+  </body>
+</html>
